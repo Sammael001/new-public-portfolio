@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sylvia Moore | Full Stack Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel='icon' href='/imgs/favicon2.ico' type='image/x-icon'/ >
+  </head>
+
+  <body>
+
+
+    <div class="hero">
+      <!-- <img class="hero-img" src="imgs/fog.jpg" alt=""> -->
+    </div>
+    <div class="side-nav">
+      <h4 class="brand orbi">Sylvia Moore | Web Developer</h4>
+      <div>
+        <a href="#about" class="nav-link orbi">About</a>
+        <a href="#work" class="nav-link orbi">Work</a>
+        <a href="#contact" class="nav-link orbi">Contact</a>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Hero text -->
+
+      <div class="main child" id="main">
+
+        <p class="title">
+          Hi, my name is <span class="bright-grn">Sylvia</span>.
+        </p>
+        <p class="subtitle">
+          I'm a <span class="bright-grn">full-stack web developer</span>.
+        </p>
+        <img class="main-icon" src="imgs/computer.png" alt="pc">
+
+        <a href="#about" class="arrow arrow-dark"><i class="fas fa-chevron-circle-down"></i></a>
+
+      </div>
+
+      <!-- About Me -->
+
+      <div class="content child" id="about">
+        <div class="card">
+
+            <div class="title-box">
+              <h2 class="card-title show-on-scroll"><span class="orbi">About Me</span></h2>
+            </div>
+            <div class="text-box">
+              <p class="card-text show-on-scroll">I pride myself on writing clean code and building simple, elegant websites with intuitive interfaces.</p>
+              <p class="card-text show-on-scroll">I love a challenge and am always excited to learn new tools and technologies.</p>
+              <p class="card-text show-on-scroll">I'm self-motivated and enjoy working solo, but I also love working together as a team, and my extensive customer service background means that I have excellent soft skills and know how to communicate effectively.</p>
+              <div class="skill-box">
+                <!-- <h3>Front-end: </h3> -->
+                <img class="code-icon show-on-scroll first" src="imgs/html5-orange.png" alt="html">
+                <img class="code-icon show-on-scroll second" src="imgs/css3.png" alt="css">
+                <img class="code-icon show-on-scroll third" src="imgs/js-badge.png" alt="JS">
+                <img class="code-icon show-on-scroll fourth" src="imgs/react-icon.png" alt="react">
+                <p class="code-logo show-on-scroll magenta fifth"><%= EJS %></p>
+              </div>
+              <div class="skill-box">
+                <!-- <h3>Back-end: </h3> -->
+                <img class="code-icon show-on-scroll first" src="imgs/node3.png" alt="nodejs">
+                <img class="code-icon show-on-scroll second" src="imgs/express.png" alt="express">
+                <div class="mongo show-on-scroll third">
+                  <p>MongoDB</p>
+                </div>
+                <p class="code-logo show-on-scroll maroon fourth">MONGOOSE</p>
+              </div>
+              <!-- <div class="skill-box">
+                <h3>Tools: </h3>
+                <img class="code-icon show-on-scroll first" src="imgs/git3.png" alt="git">
+                <img class="code-icon show-on-scroll second" src="imgs/github2.png" alt="github">
+              </div> -->
+
+            </div>
+        </div>
+        <a href="#work" class="arrow arrow-dark"><i class="fas fa-chevron-circle-down"></i></a>
+
+      </div>
+
+      <!-- My Work -->
+
+      <div class="content child" id="work">
+        <a href="#about" class="arrow arrow-light"><i class="fas fa-chevron-circle-up"></i></a>
+
+        <div class="card-columns">
+
+            <div class="title-box-on-top">
+              <h2 class="card-title show-on-scroll"><span class="orbi">Project Showcase: Office Dashboard</span></h2>
+            </div>
+
+            <h4 class="third show-on-scroll">This Office Dashboard app was built for my current employer to resolve issues with inter-office communications and logistics in Customer Care.</h4>
+
+            <div class="text-box-on-bottom">
+
+              <div class="showhim">
+                <img class="project-pic show-on-scroll fourth" src="imgs/cap1.png" alt="dashboard">
+                <div class="showme">
+                  <p>Memo section of Office Dashboard app.</p>
+                  <p>Users can create, read, update and delete inter-office memos.</p>
+                  <p>Server: NodeJS and ExpressJS</p>
+                  <p>Database: MongoDB Atlas and Mongoose</p>
+                  <p>Host: Heroku</p>
+                </div>
+              </div>
+
+              <div class="showhim">
+                <img class="project-pic show-on-scroll twosec" src="imgs/cap2.png" alt="dashboard">
+                <div class="showme">
+                  <p>Inventory section of Office Dashboard app.</p>
+                  <p>Users can search the inventory by different criteria or display by warehouse.</p>
+                  <p>Server: NodeJS and ExpressJS</p>
+                  <p>Database: MongoDB Atlas and Mongoose</p>
+                  <p>Host: Heroku</p>
+                </div>
+              </div>
+
+              <div class="showhim">
+                <img class="project-pic show-on-scroll threesec" src="imgs/cap3.png" alt="dashboard">
+                <div class="showme">
+                  <p>Sales Reps section of Office Dashboard app.</p>
+                  <p>Users can locate a sales rep by state, province or country.</p>
+                  <p>Server: NodeJS and ExpressJS</p>
+                  <p>Database: MongoDB Atlas and Mongoose</p>
+                  <p>Host: Heroku</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="visit">
+              <a class="orbi nav-link" href="https://mighty-everglades-46867.herokuapp.com/"><h3>Visit Demo Site *</h3></a>
+              <a class="orbi nav-link" href="https://github.com/Sammael001/dashboard-demo"><h3>See Code Repo</h3></a>
+            </div>
+            <p class="card-text">* Please use email address <strong>tester@mail.com</strong> and password <strong>password</strong> to login to the demo app.</p>
+      </div>
+      <a href="#contact" class="arrow arrow-dark"><i class="fas fa-chevron-circle-down"></i></a>
+
+      </div>
+
+    <!-- Contact Me -->
+
+      <div class="content child" id="contact">
+        <a href="#work" class="arrow arrow-light"><i class="fas fa-chevron-circle-up"></i></a>
+        <div class="card">
+          <div class="title-box">
+            <h2 class="card-title show-on-scroll"><span class="orbi">Contact Me</span></h2>
+          </div>
+          <div class="text-box">
+            <h4 class="card-text show-on-scroll">I'd love to hear from you!</h4>
+            <p class="card-text show-on-scroll">Email: sylviaisworking@gmail.com</p>
+            <p class="card-text show-on-scroll">Phone: 682-472-0653</p>
+            <a href="#" class="card-text show-on-scroll nav-link orbi"><h4>My Resume</h4></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+ </html>

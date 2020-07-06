@@ -1,0 +1,347 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: ghostwhite;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* letter-spacing: 0.1em; */
+
+}
+.orbi {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.08em;
+}
+
+    /* holds bg image */
+.hero {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(360, 360, 360, 1), rgba(360, 360, 360, 0.5)),
+    url('imgs/fog.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* .hero-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+} */
+
+    /* navigation bar at top */
+.side-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  height: 5%;
+  /* padding: 0.5em; */
+}
+.brand {
+  padding-left: 0.5em;
+}
+.nav-link {
+  color: #006600;
+  font-weight: bold;
+  padding-right: 1em;
+  text-decoration: none;
+  transition: color 1s;
+}
+.nav-link:hover{
+  color: #00ff00;
+}
+
+    /* parent element */
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+  /* child element for each element */
+.child {
+  height: 100%;
+  width: 90%;
+  /* align content inside child elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+    /* for text content inside hero */
+.main {
+  position: relative;
+  margin: auto;
+  animation: fadeIn ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+    /* for content inside other divs */
+.content {
+  position: relative;
+  margin: auto;
+}
+
+.card {
+  min-height: 60vh;
+  min-width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkgreen;
+  box-shadow: 0 4px 8px 0 rgba(0, 50, 50, 0.2);
+  background-color: white;
+}
+
+.card-columns {
+  min-height: 60vh;
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid darkgreen;
+  box-shadow: 0 4px 8px 0 rgba(0, 50, 50, 0.2);
+  background-color: white;
+  color: darkgreen;
+}
+
+
+.title-box {
+  background-color: darkgreen;
+  color: white;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.text-box {
+  color: darkgreen;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.card-text {
+  font-size: 1.15em;
+}
+
+    /* custom class to slide/fade element into view */
+
+.card-title.fancy { animation: slideFromLeft 2s ease-out; }
+.card-text.fancy { animation: slideFromRight 2s ease-out; }
+.first.fancy { animation: slideFromAbove 0.25s ease-out; }
+.second.fancy { animation: slideFromAbove 0.5s ease-out; }
+.third.fancy { animation: slideFromAbove 0.75s ease-out; }
+.fourth.fancy { animation: slideFromAbove 1s ease-out; }
+.fifth.fancy { animation: slideFromAbove 1.25s ease-out; }
+.twosec.fancy { animation: slideFromAbove 2s ease-out; }
+.threesec.fancy { animation: slideFromAbove 3s ease-out; }
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+  100% {
+    opacity: 1;
+    /* transform: scale(1); */
+  }
+}
+@keyframes slideFromRightShorter {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    /* transform: scale(1); */
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  100% {
+    opacity: 1;
+    /* transform: scale(1); */
+  }
+}
+@keyframes slideFromAbove {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 3em;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
+}
+.subtitle {
+  margin-top: 0;
+  font-size: 1.75em;
+}
+.bright-grn {
+  color: #006600;
+}
+.main-icon {
+  height: 100px;
+}
+
+.arrow {
+  padding: 1em;
+  font-size: 2em;
+  transition: color 1s;
+  text-align: center;
+  animation: flicker 3s infinite;
+}
+.arrow-light { color: #d9d9d9; }
+.arrow-dark { color: #8c8c8c; }
+.arrow:hover { color: #006600; }
+
+/* ABOUT ME section */
+
+.skill-box {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.code-icon {
+  height: 50px;
+  width: auto;
+  max-width: 150px;
+  padding: 0.5em;
+}
+.code-logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.5em;
+}
+.mongo {
+  font-size: 1.25em;
+  padding: 0.5em;
+  font-weight: bold;
+  background: url("./imgs/mon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: black;
+}
+
+.magenta { color: magenta; }
+.maroon { color: #b30000; }
+
+    /* MY WORK */
+
+.visit {
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title-box-on-top {
+  background-color: darkgreen;
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.text-box-on-bottom {
+  color: darkgreen;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.showme {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  width: 91.5%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 1em;
+}
+.showme > p {
+  text-align: center;
+}
+
+.showhim {
+  width: auto;
+  height: 250px;
+  position: relative;
+}
+
+.showhim:hover .showme {
+  opacity: 1;
+}
+
+.project-pic {
+ max-height: 250px;
+ border: 1px solid green;
+ margin: 1em;
+ transition: transform .5s ease-in-out;
+}
