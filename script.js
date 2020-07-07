@@ -22,3 +22,18 @@ const targets = document.querySelectorAll(".show-on-scroll");
 targets.forEach(function(target) {
   observer.observe(target);
 });
+
+
+// hide or show the hiddenDiv with more info about the Office Dashboard
+const hiddenDiv = document.getElementById("hiddenDiv");
+const showDiv = document.getElementById("showDiv");
+showDiv.addEventListener("click", function(evt){
+  hiddenDiv.classList.remove("hidden");
+  console.log(evt.target.id);
+});
+
+document.addEventListener("click", function(evt){
+  if(evt.target.id !== 'showDiv'){
+    hiddenDiv.classList.add("hidden");
+  }
+});
