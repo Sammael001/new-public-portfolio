@@ -88,8 +88,8 @@ body, html {
   text-align: center;
   animation: flicker 3s infinite;
 }
-.arrow-light { color: #cccccc; }
-.arrow-dark { color: #cccccc; }
+.arrow-light { color: #8c8c8c; }
+.arrow-dark { color: #8c8c8c; }
 .arrow:hover { color: #006600; }
 
     /* for content inside other divs */
