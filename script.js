@@ -9,7 +9,6 @@ const callback = function(entries) {
         } else {
           entry.target.classList.remove('fancy');
         }
-    // entry.target.classList.toggle("is-visible");
   });
 };
 
